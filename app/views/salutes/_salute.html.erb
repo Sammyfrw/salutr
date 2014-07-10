@@ -1,0 +1,11 @@
+<li>
+  <div>
+  <%= salute.body %>
+  </div>
+  <div>
+  <%= salute.user.username %>
+  </div>
+  <div>
+  <%= time_ago_in_words(salute.created_at) %> ago
+  </div>
+</li>

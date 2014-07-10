@@ -7,7 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<h1> <%= link_to "Salut!", root_path %> </h1>
+<% if signed_in?%>
+  <div>You are currently signed in as <%= current_user.username%></div>
+  <%= link_to "Sign out", sign_out_path %></h1>
+  <% else%>
+  <%= link_to "Sign up", sign_up_path %>
+  <%end%>
 <%= yield %>
 
 </body>
