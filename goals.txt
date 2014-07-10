@@ -5,5 +5,5 @@ Salutr app,
 	!!!!!!!!!!!!!!!!!!!!!username instead of email with monban, 
 	!!!!!!!!!!!!!!!!!!!!!database with user, session, salute tables
 	~~~~~readme
-end
+end  
 
