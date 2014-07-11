@@ -18,13 +18,14 @@ ActiveRecord::Schema.define(version: 20140710190616) do
 
   create_table "salutes", force: true do |t|
     t.string   "body",        null: false
-    t.integer  "sender_id",   null: false
+    t.integer  "user_id",     null: false
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.string   "target_user", null: false
     t.integer  "receiver_id", null: false
   end
 
-  add_index "salutes", ["sender_id"], name: "index_salutes_on_sender_id", using: :btree
+  add_index "salutes", ["user_id"], name: "index_salutes_on_user_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "username"
