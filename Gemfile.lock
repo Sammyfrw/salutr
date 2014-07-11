@@ -28,6 +28,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
+    bcrypt (3.1.7)
     bcrypt (3.1.7-x86-mingw32)
     builder (3.2.2)
     coffee-rails (4.0.1)
@@ -45,6 +46,7 @@ GEM
     erubis (2.7.0)
     execjs (2.2.1)
     hike (1.2.3)
+    httpclient (2.3.4.1)
     i18n (0.6.11)
     jbuilder (2.1.2)
       activesupport (>= 3.0.0, < 5)
@@ -65,8 +67,13 @@ GEM
     monban-generators (0.0.2)
       monban (~> 0.0.12)
     multi_json (1.10.1)
+    pg (0.17.1)
     pg (0.17.1-x86-mingw32)
     polyglot (0.3.5)
+    pusher (0.12.0)
+      httpclient (~> 2.3.0)
+      multi_json (~> 1.0)
+      signature (~> 0.1.6)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -97,6 +104,7 @@ GEM
     sdoc (0.4.0)
       json (~> 1.8)
       rdoc (~> 4.0, < 5.0)
+    signature (0.1.7)
     sprockets (2.11.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -135,6 +143,7 @@ DEPENDENCIES
   monban
   monban-generators
   pg
+  pusher
   rails (= 4.1.1)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)

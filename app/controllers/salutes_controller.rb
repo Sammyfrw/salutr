@@ -7,7 +7,8 @@ class SalutesController < ApplicationController
 
   def create
     @salute = current_user.sent_salutes.create(target_user_params )
-    redirect_to root_path
+    salute_content = render @salute
+    Pusher[target_user_params[:receiver_id].to_s].trigger('new-salute', {content: salute_content})
   end
 
   private

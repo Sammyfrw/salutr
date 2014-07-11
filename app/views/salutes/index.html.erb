@@ -1,6 +1,6 @@
 <h2> Salut your friends! Here we go! </h2>
 
-<%= form_for @salute do |f| %>
+<%= form_for @salute, html: {id: "new_salute"} do |f| %>
 <%= f.collection_select(:receiver_id, @users, :id, :username) %>
 <%= f.submit "Salut!" %>
 <% end%>

@@ -40,3 +40,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'monban'
 gem 'monban-generators'
 gem 'dotenv-rails', '~> 0.11.1'
+gem 'pusher'
