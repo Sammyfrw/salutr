@@ -1,7 +1,7 @@
 END_GOAL: 
 Salutr app, 
-	with websockets, 
-	has JS for greets, 
+	!!!!!!!!!!!!!!!!!!!!!with websockets, 
+	!!!!!!!!!!!!!!!!!!!!!has JS for greets, 
 	!!!!!!!!!!!!!!!!!!!!!username instead of email with monban, 
 	!!!!!!!!!!!!!!!!!!!!!database with user, session, salute tables
 	~~~~~readme
