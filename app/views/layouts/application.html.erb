@@ -10,7 +10,7 @@
   <%if signed_in?%>
   <script>
     window.CHANNEL = "<%= current_user.id%>";
-    window.PUSHER = "<%= ENV['PUSHER_APP_KEY']%>";
+    window.PUSHER = "<%= ENV.fetch('PUSHER_APP_KEY')%>";
   </script>
   <%end%>
 
