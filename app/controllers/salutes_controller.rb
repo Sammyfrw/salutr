@@ -6,7 +6,7 @@ class SalutesController < ApplicationController
   end
 
   def create
-    @salute = current_user.sent_salutes.create(target_user_params )
+    @salute = current_user.sent_salutes.create(target_user_params)
     salute_content = render @salute
     Pusher[target_user_params[:receiver_id].to_s].trigger('new-salute', {content: salute_content})
   end
